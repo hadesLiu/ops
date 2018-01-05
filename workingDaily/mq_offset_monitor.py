@@ -10,9 +10,9 @@ import sys,socket
 import datetime
 
 def broker_topic_consumergroup():
-    brokerAddrs = ["172.24.0.11:10711","172.24.0.12:10711","172.24.0.13:10711","172.24.0.14:10711","172.24.1.3:10711","172.24.1.4:10711"]
+    brokerAddrs = ["192.168.1.1"]
     for brok in brokerAddrs:
-        items = subprocess.Popen("bash /home/rocketmq/29876_4.0/apache-rocketmq-all/bin/mqadmin brokerConsumeStats -n 127.0.0.1:29876 -b %s" % brok,
+        items = subprocess.Popen("bash /home/rocketmq/29876_4.0/apache-rocketmq-all/bin/mqadmin brokerConsumeStats -n 127.0.0.1:9876 -b %s" % brok,
                                  shell=True, env={"JAVA_HOME":"/usr/local/jdk"}, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         consumers = {}
         brokers = {}
