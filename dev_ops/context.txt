@@ -1,0 +1,11 @@
+HTTP/1.1 405 Method Not Allowed
+Server: Tengine
+Date: Wed, 20 Dec 2017 09:17:25 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Allow: POST
+$WSEP: 
+Content-Language: zh-CN
+Set-Cookie: BIGipServerPool_nginx_IPstation=3084976394.10531.0000; path=/
+
